@@ -1,0 +1,25 @@
+{
+  "name": "party-marketplace",
+  "private": true,
+  "workspaces": [
+    "packages/*",
+    "apps/*"
+  ],
+  "scripts": {
+    "build:shared": "npm run build -w @party/shared",
+    "dev": "npm run build:shared && concurrently -k -n api,web -c magenta,cyan \"npm run dev -w @party/api\" \"npm run dev -w @party/web\"",
+    "dev:api": "npm run build:shared && npm run dev -w @party/api",
+    "dev:web": "npm run build:shared && npm run dev -w @party/web",
+    "build": "npm run build:shared && npm run build -w @party/api && npm run build -w @party/web",
+    "seed": "npm run build:shared && npm run seed -w @party/api",
+    "typecheck": "npm run build:shared && npm run typecheck --workspaces --if-present",
+    "test": "npm run build:shared && npm run test --workspaces --if-present",
+    "seed:demo": "npm run build:shared && npm run seed:demo -w @party/api --"
+  },
+  "engines": {
+    "node": ">=20"
+  },
+  "devDependencies": {
+    "concurrently": "^9.2.5"
+  }
+}

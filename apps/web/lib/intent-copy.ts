@@ -1,0 +1,36 @@
+export const intentCopy = {
+  he: {
+    add: 'שמירת מתנה', added: 'מתנה שמורה', count: 'פריטים שמורים',
+    question: 'איך תרצו לחגוג?', host: 'אני מארגן מסיבה', hostSub: 'בונים את החגיגה ובוחרים עסקים ושירותים',
+    guest: 'אני אורח ומחפש מתנה', guestSub: 'מוצאים מתנה מיוחדת ועסק שאפשר לקנות ממנו',
+    title: 'מגיעים עם משהו מיוחד.', accent: 'מתנה שיש בה מחשבה.',
+    intro: 'מתנות אישיות, מארזים ומתוקים — גלו עסקים לרכישת מתנה למארחים או לחוגג.',
+    budget: 'תקציב למתנה', find: 'מצאו לי מתנה', note: 'בחרו עסק או מוצר ופנו לעסק לבירור מלאי, התאמה ורכישה.',
+    gifts: 'עסקים למתנות לאורחים', all: 'כל רעיונות המתנה', personal: 'מתנות ומארזים', sweet: 'מתוקים ועוגות',
+    shortlist: 'המתנות ששמרתי', saved: 'הרשימה נשמרת במכשיר הזה. אפשר לבחור כמה מוצרים ועסקים ולפנות לכל עסק בנפרד.',
+    multi: 'אפשר להוסיף כמה עסקים ושירותים בכל קטגוריה.', more: 'הוספת עסק נוסף', empty: 'הוסיפו מתנות מהעסקים שמופיעים כאן.',
+  },
+  ar: {
+    add: 'حفظ هدية', added: 'هدية محفوظة', count: 'منتجات محفوظة',
+    question: 'كيف حابين تحتفلوا؟', host: 'أنا بنظّم مناسبة', hostSub: 'بنرتّب الفرحة وبنختار المصالح والخدمات',
+    guest: 'أنا ضيف وبدور على هدية', guestSub: 'منلاقي هدية مميزة ومصلحة نشتري منها',
+    title: 'وصلوا ومعكم إشي مميّز.', accent: 'هدية من القلب.',
+    intro: 'هدايا شخصية، بوكسات وحلويات — اكتشفوا مصالح لشراء هدية للمضيفين أو لصاحب المناسبة.',
+    budget: 'ميزانية الهدية', find: 'لاقوا لي هدية', note: 'اختاروا مصلحة أو منتج وتواصلوا معها لفحص التوفّر والتخصيص والشراء.',
+    gifts: 'مصالح لشراء هدية كضيف', all: 'كل أفكار الهدايا', personal: 'هدايا وبوكسات', sweet: 'حلويات وكيك',
+    shortlist: 'الهدايا المحفوظة', saved: 'القائمة محفوظة على هذا الجهاز. بتقدروا تختاروا عدة منتجات ومصالح وتتواصلوا مع كل مصلحة لحالها.',
+    multi: 'بتقدروا تضيفوا أكثر من مصلحة وخدمة بنفس الفئة.', more: 'إضافة مصلحة أخرى', empty: 'أضيفوا هدايا من المصالح المعروضة هون.',
+  },
+  en: {
+    add: 'Save gift', added: 'Gift saved', count: 'saved items',
+    question: 'How are you celebrating?', host: 'I am organising a party', hostSub: 'Build your celebration with businesses and services',
+    guest: 'I am a guest finding a gift', guestSub: 'Discover a thoughtful gift and a business to buy it from',
+    title: 'Arrive with something special.', accent: 'A gift with thought.',
+    intro: 'Personal gifts, hampers and sweet treats. Discover businesses to buy something for your hosts or the guest of honour.',
+    budget: 'Gift budget', find: 'Find a gift', note: 'Choose a business or product and contact the business for stock, customisation and purchase.',
+    gifts: 'Businesses for guest gifts', all: 'All gift ideas', personal: 'Gifts & hampers', sweet: 'Cakes & sweet treats',
+    shortlist: 'My saved gifts', saved: 'Saved on this device. Choose multiple products and businesses, then contact each business separately.',
+    multi: 'Add multiple businesses and services in each category.', more: 'Add another business', empty: 'Save gifts from the businesses shown here.',
+  },
+};
+export const GIFT_CATEGORIES = ['gifts', 'cakes-sweets'];

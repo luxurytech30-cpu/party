@@ -1,0 +1,21 @@
+services:
+  - type: web
+    name: farah-api
+    runtime: node
+    plan: free
+    buildCommand: npm ci --include=dev && npm run build:shared && npm run build -w @party/api
+    startCommand: npm run start -w @party/api
+    healthCheckPath: /health
+    envVars:
+      - key: NODE_ENV
+        value: production
+      - key: NODE_VERSION
+        value: "22"
+      - key: MONGOMS_DISABLE_POSTINSTALL
+        value: "1"
+      - key: MONGODB_URI
+        sync: false
+      - key: JWT_ACCESS_SECRET
+        generateValue: true
+      - key: CORS_ORIGINS
+        sync: false
