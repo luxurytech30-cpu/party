@@ -15,6 +15,17 @@ Push the repository to an account connected to Render, then create a Blueprint f
 
 Verify the Render `/health` response reports `status: ok` and `db: up`.
 
+### Existing Render service rooted at `apps/api`
+
+For a service created manually with **Root Directory `apps/api`**, use:
+
+- Build Command: `npm ci --include=dev && npm run build`
+- Start Command: `npm start`
+- Health Check Path: `/health`
+- `NODE_VERSION`: `22`
+
+The API's `prebuild` script builds `@party/shared` first. Its generated `dist` files are intentionally not committed, so a fresh Render checkout must compile this workspace before compiling the API. This also works with an existing `npm install && npm run build` build command. The root-level Blueprint uses its own root-relative commands instead.
+
 ## 2. Vercel web app
 
 Import the same repository with **Root Directory `apps/web`**. Enable source files outside the root directory for shared workspace imports. The local `vercel.json` sets the workspace installation and build commands.
